@@ -1,0 +1,12 @@
+-- public.completed definition
+
+-- Drop table
+
+-- DROP TABLE public.completed;
+
+CREATE TABLE public.completed (
+	completedid serial4 NOT NULL,
+	"name" varchar NOT NULL,
+	description varchar NULL,
+	CONSTRAINT completed_pk PRIMARY KEY (completedid)
+);

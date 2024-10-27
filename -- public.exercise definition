@@ -1,0 +1,14 @@
+-- public.exercise definition
+
+-- Drop table
+
+-- DROP TABLE public.exercise;
+
+CREATE TABLE public.exercise (
+	exerciseid int4 DEFAULT nextval('historyexercise_historyexerciseid_seq'::regclass) NOT NULL,
+	exercisetypeid int4 NOT NULL,
+	completedid int4 NOT NULL,
+	userid int4 NOT NULL,
+	eventid int4 NOT NULL,
+	CONSTRAINT historyexercise_pk PRIMARY KEY (exerciseid)
+);

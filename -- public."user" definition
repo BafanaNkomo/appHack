@@ -1,0 +1,13 @@
+-- public."user" definition
+
+-- Drop table
+
+-- DROP TABLE public."user";
+
+CREATE TABLE public."user" (
+	userid serial4 NOT NULL,
+	"name" varchar NOT NULL,
+	age int4 NOT NULL,
+	usertype varchar NOT NULL,
+	CONSTRAINT user_pk PRIMARY KEY (userid)
+);

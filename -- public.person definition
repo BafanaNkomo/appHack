@@ -1,0 +1,15 @@
+-- public.person definition
+
+-- Drop table
+
+-- DROP TABLE public.person;
+
+CREATE TABLE public.person (
+	id serial4 NOT NULL,
+	"name" varchar NOT NULL,
+	surname varchar NOT NULL,
+	idnumber varchar NOT NULL,
+	dateofbirth date NOT NULL,
+	userid int4 NOT NULL,
+	CONSTRAINT newtable_pk PRIMARY KEY (id)
+);

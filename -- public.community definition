@@ -1,0 +1,12 @@
+-- public.community definition
+
+-- Drop table
+
+-- DROP TABLE public.community;
+
+CREATE TABLE public.community (
+	communityid int4 DEFAULT nextval('communities_communityid_seq'::regclass) NOT NULL,
+	"name" varchar NOT NULL,
+	"location" varchar NULL,
+	CONSTRAINT communities_pk PRIMARY KEY (communityid)
+);
