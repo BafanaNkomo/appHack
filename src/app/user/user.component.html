@@ -1,0 +1,26 @@
+<div *ngIf="users.length === 0">Loading...</div>
+<div *ngIf="users.length > 0">
+  <!-- Your existing table code here -->
+</div>
+<div class="user-list">
+    <h2>User List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>User ID</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>User Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.userid }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.age }}</td>
+          <td>{{ user.usertype }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
